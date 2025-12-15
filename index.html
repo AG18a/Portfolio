@@ -1,11 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Antoine Gelles</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Mon Portoflio</h1>
+
+    <nav id="navbar">
+        <ul>
+            <li><a href="#home">Accueil</a></li>
+            <li><a href="#about">A Propos</a></li>
+            <li><a href="#experience">Parcours</a></li>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#veille">Veilles</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="section">
+        <h1>ROMÉO KOTHAN</h1>
+        <p>Bienvenue sur mon portfolio</p>
+    </section>
+
+    <section id="about" class="section">
+        <h2>A Propos</h2>
+        <p>Salut, moi c'est Roméo, étudiant en BTS SIO option SLAM.</p>
+    </section>
+
+    <section id="experience" class="section">
+        <h2>Parcours</h2>
+        <ul>
+            <li>BTS SIO SLAM – Lycée Chaptal</li>
+            <li>Stage en développement web</li>
+            <li>Micro-entreprise (marketing & développement)</li>
+        </ul>
+    </section>
+
+    <section id="projects" class="section">
+        <h2>Projets</h2>
+        <p>Voici quelques-uns de mes projets :</p>
+        <ul>
+            <li>Site Kayak'Mor – HTML / CSS</li>
+            <li>Blog Lacritica – WordPress</li>
+            <li>Parallax Minecraft – Elementor</li>
+        </ul>
+    </section>
+
+    <section id="veille" class="section">
+        <h2>Veilles Technologiques</h2>
+        <p>Qu’est-ce que la veille technologique ?</p>
+        <p>La veille permet de suivre les évolutions techniques dans un secteur donné...</p>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <form id="contact-form">
+            <label for="name">Votre nom:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="email">Votre email:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
