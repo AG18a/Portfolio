@@ -1,4 +1,4 @@
-
+alert("JS chargé !");
 document.querySelectorAll('nav#navbar a').forEach(link => {
     link.addEventListener('click', function(e) {
         e.preventDefault();
@@ -12,3 +12,4 @@ document.getElementById("contact-form").addEventListener("submit", function(e) {
     e.preventDefault();
     alert("Merci pour votre message !");
 });
+
