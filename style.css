@@ -10,9 +10,6 @@ body {
     color: #222;
     line-height: 1.6;
 }
-{
-    background: red;
-}
 nav#navbar {
     background: #333;
     padding: 10px;
@@ -87,4 +84,5 @@ form button {
 form button:hover {
     background: #355b7d;
 }
+
 
