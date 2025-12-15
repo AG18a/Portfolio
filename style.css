@@ -123,6 +123,8 @@ button:hover {
     opacity: 0.9;
 }
 
+
+
 @keyframes fadeUp {
     from {
         opacity: 0;
@@ -148,3 +150,19 @@ button:hover {
         font-size: 1.8rem;
     }
 }
+.btn-download {
+    display: inline-block;
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #38bdf8, #6366f1);
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.btn-download:hover {
+    background: linear-gradient(135deg, #6366f8, #4f46e5);
+}
+
+
