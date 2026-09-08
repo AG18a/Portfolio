@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Épreuve E5 | Portfolio Antoine Gelles</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .e5-bloc {
+      margin-bottom: 40px;
+    }
+    .e5-bloc h3 {
+      border-left: 4px solid var(--accent, #00bcd4);
+      padding-left: 12px;
+      margin-bottom: 20px;
+    }
+    .competence-card {
+      background: var(--card-bg, #1e1e2e);
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 16px;
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+    .competence-card h4 {
+      margin: 0 0 8px 0;
+      font-size: 1rem;
+    }
+    .competence-card p {
+      font-size: 0.88rem;
+      opacity: 0.8;
+      margin-bottom: 14px;
+    }
+    .competence-footer {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .statut {
+      font-size: 0.78rem;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-weight: bold;
+      white-space: nowrap;
+    }
+    .statut.validee   { background:#1a3a2a; color:#4caf50; border:1px solid #4caf50; }
+    .statut.en-cours  { background:#2a2a1a; color:#ff9800; border:1px solid #ff9800; }
+    .statut.non-val   { background:#2a1a1a; color:#f44336; border:1px solid #f44336; }
+    .btn-preuve {
+      font-size: 0.78rem;
+      padding: 5px 14px;
+      border-radius: 20px;
+      border: 1px solid var(--accent, #00bcd4);
+      color: var(--accent, #00bcd4);
+      background: transparent;
+      cursor: pointer;
+      text-decoration: none;
+      transition: 0.2s;
+    }
+    .btn-preuve:hover {
+      background: var(--accent, #00bcd4);
+      color: #000;
+    }
+    .lien-preuve {
+      font-size: 0.78rem;
+      color: #4caf50;
+      text-decoration: underline;
+      word-break: break-all;
+    }
+    .intro-e5 {
+      background: var(--card-bg, #1e1e2e);
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 36px;
+      border-left: 4px solid var(--accent, #00bcd4);
+      font-size: 0.92rem;
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+ 
+<nav id="navbar">
+  <ul>
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="about.html">À propos</a></li>
+    <li><a href="experience.html">Parcours</a></li>
+    <li><a href="projects.html">Projets</a></li>
+    <li><a href="e5.html">Épreuve E5</a></li>
+    <li><a href="veille.html">Veilles</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+ 
+<section class="section">
+  <h2>Épreuve E5 — Compétences SISR</h2>
+ 
+  <div class="intro-e5">
+    <strong>Qu'est-ce que l'E5 ?</strong><br>
+    L'épreuve E5 « Support et mise à disposition de services informatiques » évalue
+    les compétences professionnelles acquises en BTS SIO. Pour l'option SISR, elle
+    couvre deux blocs : les compétences communes (Bloc 1) et les compétences
+    spécifiques aux infrastructures systèmes et réseaux (Bloc 2).<br><br>
+    Chaque carte ci-dessous présente une compétence du référentiel, son statut de
+    validation et un lien vers les preuves associées.
+  </div>
+ 
+  <!-- ===================== BLOC 1 ===================== -->
+  <div class="e5-bloc">
+    <h3>📦 Bloc 1 — Support et mise à disposition de services informatiques</h3>
+ 
+    <!-- B1.1 -->
+    <div class="competence-card">
+      <h4>B1.1 — Gérer le patrimoine informatique</h4>
+      <p>
+        Recenser et identifier les ressources numériques, exploiter des référentiels,
+        des normes et des standards adoptés par le prestataire informatique, mettre en
+        place et vérifier les niveaux d'habilitation associés à un service,
+        vérifier les conditions de la continuité d'un service informatique,
+        gérer des sauvegardes, vérifier le respect des règles d'utilisation des
+        ressources numériques.
+      </p>
+      <div class="competence-footer">
+        <span class="statut en-cours">⏳ En cours</span>
+        <a class="btn-preuve" href="#" onclick="ajouterLien(this, 'B1.1'); return false;">📎 Ajouter une preuve</a>
+      </div>
+    </div>
+ 
+    <!-- B1.2 -->
+    <div class="competence-card">
+      <h4>B1.2 — Répondre aux incidents et aux demandes d'assistance et d'évolution</h4>
+      <p>
+        Collecter, suivre et orienter des réclamations, traiter des demandes
+        concernant les services réseau et système, les services supports et les
+        services applicatifs, mettre à jour une documentation technique.
+      </p>
+      <div class="competence-footer">
+        <span class="statut en-cours">⏳ En cours</span>
+        <a class="btn-preuve" href="#" onclick="ajouterLien(this, 'B1.2'); return false;">📎 Ajouter une preuve</a>
+      </div>
+    </div>
+ 
+    <!-- B1.3 -->
+    <div class="competence-card">
+      <h4>B1.3 — Développer la présence en ligne de l'organisation</h4>
+      <p>
+        Participer à la valorisation de l'image de l'organisation sur les médias
+        numériques en référençant ses services, contribuer à l'évolution d'un site
+        web exploitant les données de l'organisation.
+      </p>
+      <div class="competence-footer">
+        <span class="statut validee">✅ Validée</span>
+        <a class="btn-preuve" href="#" onclick="ajouterLien(this, 'B1.3'); return false;">📎 Ajouter une preuve</a>
+      </div>
+    </div>
+ 
+    <!-- B1.4 -->
+    <div class="competence-card">
+      <h4>B1.4 — Travailler en mode projet</h4>
+      <p>
+        Analyser les objectifs et les modalités d'organisation d'un projet, planifier
+        les activités, évaluer les indicateurs de suivi d'un projet et analyser les
+        écarts.
+      </p>
+      <div class="competence-footer">
+        <span class="statut en-cours">⏳ En cours</span>
+        <a class="btn-preuve" href="#" onclick="ajouterLien(this, 'B1.4'); return false;">📎 Ajouter une preuve</a>
+      </div>
+    </div>
+ 
+    <!-- B1.5 -->
+    <div class="competence-card">
+      <h4>B1.5 — Mettre à disposition des utilisateurs un service informatique</h4>
+      <p>
+        Réaliser les tests d'intégration et d'acceptation d'un service, déployer
+        un service, accompagner les utilisateurs dans la mise en place d'un service.
+      </p>
+      <div class="competence-footer">
+        <span class="statut en-cours">⏳ En cours</span>
+        <a class="btn-preuve" href="#" onclick="ajouterLien(this, 'B1.5'); return false;">📎 Ajouter une preuve</a>
+      </div>
+    </div>
+ 
+    <!-- B1.6 -->
+    <div class="competence-card">
+      <h4>B1.6 — Organiser son développement professionnel</h4>
+      <p>
+        Mettre en place son environnement d'apprentissage personnel, mettre en
+        œuvre des outils et stratégies de veille informationnelle, gérer son
+        identité professionnelle, développer son projet professionnel.
+      </p>
+      <div class="competence-footer">
+        <span class="statut validee">✅ Validée</span>
+        <a class="btn-preuve" href="#" onclick="ajouterLien(this, 'B1.6'); return false;">📎 Ajouter une preuve</a>
+      </div>
+    </div>
+  </div>
+ 
+  <!-- ===================== BLOC 2 SISR ===================== -->
+  <div class="e5-bloc">
+    <h3>🖧 Bloc 2 — Infrastructures Systèmes et Réseaux (SISR)</h3>
+ 
+    <!-- B2.1 -->
+    <div class="competence-card">
+      <h4>B2.1 — Concevoir une solution d'infrastructure réseau</h4>
+      <p>
+        Analyser les besoins, modéliser une infrastructure réseau adaptée, proposer
+        des choix techniques argumentés (équipements, protocoles, adressage IP,
+        segmentation VLAN, etc.).
+      </p>
+      <div class="competence-footer">
+        <span class="statut en-cours">⏳ En cours</span>
+        <a class="btn-preuve" href="#" onclick="ajouterLien(this, 'B2.1'); return false;">📎 Ajouter une preuve</a>
+      </div>
+    </div>
+ 
+    <!-- B2.2 -->
+    <div class="competence-card">
+      <h4>B2.2 — Installer et configurer des éléments d'infrastructure</h4>
+      <p>
+        Installer et configurer des équipements actifs (switches, routeurs), des
+        systèmes d'exploitation (Windows Server, Linux), des services réseau
+        (DHCP, DNS, AD, etc.) et sécuriser les accès.
+      </p>
+      <div class="competence-footer">
+        <span class="statut en-cours">⏳ En cours</span>
+        <a class="btn-preuve" href="#" onclick="ajouterLien(this, 'B2.2'); return false;">📎 Ajouter une preuve</a>
+      </div>
+    </div>
+ 
+    <!-- B2.3 -->
+    <div class="competence-card">
+      <h4>B2.3 — Faire évoluer une infrastructure</h4>
+      <p>
+        Identifier les contraintes et les ressources disponibles, proposer des
+        évolutions d'une infrastructure, mettre en œuvre des modifications,
+        documenter et tester les changements effectués.
+      </p>
+      <div class="competence-footer">
+        <span class="statut non-val">❌ Non validée</span>
+        <a class="btn-preuve" href="#" onclick="ajouterLien(this, 'B2.3'); return false;">📎 Ajouter une preuve</a>
+      </div>
+    </div>
+ 
+    <!-- B2.4 -->
+    <div class="competence-card">
+      <h4>B2.4 — Exploiter et gérer une infrastructure centralisée</h4>
+      <p>
+        Administrer un annuaire (Active Directory), gérer des GPO, des comptes
+        utilisateurs, des droits d'accès, superviser les journaux d'événements
+        et assurer la continuité de service.
+      </p>
+      <div class="competence-footer">
+        <span class="statut en-cours">⏳ En cours</span>
+        <a class="btn-preuve" href="#" onclick="ajouterLien(this, 'B2.4'); return false;">📎 Ajouter une preuve</a>
+      </div>
+    </div>
+ 
+    <!-- B2.5 -->
+    <div class="competence-card">
+      <h4>B2.5 — Exploiter et gérer des services dans une infrastructure virtualisée</h4>
+      <p>
+        Déployer et administrer des machines virtuelles (VirtualBox, VMware, Hyper-V),
+        gérer des snapshots, configurer des réseaux virtuels, optimiser
+        les ressources d'une infrastructure virtualisée.
+      </p>
+      <div class="competence-footer">
+        <span class="statut en-cours">⏳ En cours</span>
+        <a class="btn-preuve" href="#" onclick="ajouterLien(this, 'B2.5'); return false;">📎 Ajouter une preuve</a>
+      </div>
+    </div>
+ 
+    <!-- B2.6 -->
+    <div class="competence-card">
+      <h4>B2.6 — Automatiser les activités d'administration et de déploiement de services</h4>
+      <p>
+        Utiliser des scripts (PowerShell, Bash) pour automatiser des tâches
+        d'administration, déployer des configurations de manière répétable et
+        fiable, mettre en place des solutions de déploiement automatisé.
+      </p>
+      <div class="competence-footer">
+        <span class="statut non-val">❌ Non validée</span>
+        <a class="btn-preuve" href="#" onclick="ajouterLien(this, 'B2.6'); return false;">📎 Ajouter une preuve</a>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<script src="script.js"
+ 
