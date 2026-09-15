@@ -1,33 +1,109 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>Projets | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projets | Portfolio Antoine Gelles</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+ 
 <nav id="navbar">
-    <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="about.html">À propos</a></li>
-        <li><a href="e5.html">E5</a></li>
-        <li><a href="rp.html">Compétences</a></li>
-        <li><a href="experience.html">Parcours</a></li>
-        <li><a href="projects.html">Projets</a></li>
-        <li><a href="veille.html">Veilles</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
+  <ul>
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="about.html">À propos</a></li>
+    <li><a href="e5.html">Épreuve E5</a></li>
+    <li><a href="rp.html">Compétences</a></li>
+    <li><a href="experience.html">Parcours</a></li>
+    <li><a href="projects.html">Projets</a></li>
+    <li><a href="veille.html">Veilles</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
 </nav>
-
+ 
 <section class="section">
-    <h2>Mes projets</h2>
-    <div class="card">
-        <h3>Site vitrine</h3>
-        <p>HTML / CSS / JS</p>
+  <h2>Mes Projets</h2>
+ 
+  <div class="project-card">
+    <h3>Homelab - Serveur Raspberry Pi</h3>
+    <span class="statut en-cours" style="
+      display:inline-block;
+      background:#2a2a1a;
+      color:#ff9800;
+      border:1px solid #ff9800;
+      border-radius:20px;
+      padding:3px 12px;
+      font-size:0.78rem;
+      font-weight:bold;
+      margin-bottom:12px;
+    ">A venir</span>
+ 
+    <p>
+      Mise en place d'un serveur personnel à base de <strong>Raspberry Pi</strong>
+      pour expérimenter des services réseau en dehors du lycée. L'objectif est
+      de monter un environnement de lab autonome pour pratiquer l'administration
+      système et réseau.
+    </p>
+ 
+    <h4 style="margin-top:14px;">Objectifs du projet</h4>
+    <ul>
+      <li>Installer un OS serveur léger (Debian / Raspberry Pi OS Lite)</li>
+      <li>Déployer des services réseau : DNS, DHCP, serveur web</li>
+      <li>Mettre en place un accès SSH sécurisé</li>
+      <li>Surveiller les ressources avec un outil de monitoring</li>
+    </ul>
+ 
+    <div class="tag-container" style="margin-top:14px;">
+      <span class="badge">Raspberry Pi</span>
+      <span class="badge">Linux</span>
+      <span class="badge">SSH</span>
+      <span class="badge">DNS / DHCP</span>
     </div>
+  </div>
+ 
+  <div class="project-card">
+    <h3>TP - Configuration VLAN & Routage inter-VLAN</h3>
+    <span style="
+      display:inline-block;
+      background:#1a3a2a;
+      color:#4caf50;
+      border:1px solid #4caf50;
+      border-radius:20px;
+      padding:3px 12px;
+      font-size:0.78rem;
+      font-weight:bold;
+      margin-bottom:12px;
+    ">Réalisé en classe</span>
+ 
+    <p>
+      Travaux pratiques réalisés au lycée <strong>Gaston Berger</strong> sur
+      la segmentation réseau par VLANs et le routage inter-VLAN avec
+      <strong>Cisco Packet Tracer</strong>.
+    </p>
+ 
+    <h4 style="margin-top:14px;">Ce qui a été réalisé</h4>
+    <ul>
+      <li>Création et attribution de VLANs sur des switchs Cisco</li>
+      <li>Configuration des ports en mode access et trunk</li>
+      <li>Mise en place du routage inter-VLAN (Router-on-a-Stick)</li>
+      <li>Test de connectivité entre les différents segments réseau</li>
+    </ul>
+ 
+    <div class="tag-container" style="margin-top:14px;">
+      <span class="badge">VLAN</span>
+      <span class="badge">Cisco Packet Tracer</span>
+      <span class="badge">Routage</span>
+      <span class="badge">Switch</span>
+    </div>
+ 
+    <div style="margin-top:16px;">
+      <a href="[LIEN_TP_VLAN]" target="_blank" class="btn-download">
+        Voir le compte-rendu
+      </a>
+    </div>
+  </div> 
 </section>
-
+ 
 <script src="script.js" defer></script>
 </body>
 </html>
