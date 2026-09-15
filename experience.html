@@ -1,33 +1,86 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>Parcours | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parcours | Portfolio Antoine Gelles</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+ 
 <nav id="navbar">
-    <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="about.html">À propos</a></li>
-        <li><a href="e5.html">E5</a></li>
-        <li><a href="rp.html">Compétences</a></li>
-        <li><a href="experience.html">Parcours</a></li>
-        <li><a href="projects.html">Projets</a></li>
-        <li><a href="veille.html">Veilles</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
+  <ul>
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="about.html">À propos</a></li>
+    <li><a href="e5.html">Épreuve E5</a></li>
+    <li><a href="rp.html">Compétences</a></li>
+    <li><a href="experience.html">Parcours</a></li>
+    <li><a href="projects.html">Projets</a></li>
+    <li><a href="veille.html">Veilles</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
 </nav>
-
+ 
 <section class="section">
-    <h2>Mon parcours</h2>
+  <h2>Mon Parcours</h2>
+ 
+  <!-- STAGE -->
+  <div class="project-card">
+    <h3>Stage - Mairie de Nieppe</h3>
+    <p><strong>Durée :</strong> 6 semaines</p>
+    <p><strong>Lieu :</strong> Nieppe (59)</p>
+    <p><strong>Rôle :</strong> Technicien informatique</p>
+ 
+    <h4 style="margin-top:16px;">Missions réalisées</h4>
     <ul>
-        <li>2025/2027 BTS SIO SISR</li>
-        <li>2022/2025 STI2D option Sin (Système d'information numérique)</li>
+      <li>
+        <strong>Support helpdesk</strong> - Assistance aux utilisateurs,
+        résolution d'incidents informatiques du quotidien
+      </li>
+      <li>
+        <strong>Préparation de postes</strong> - Installation, configuration
+        et déploiement de PC pour les agents de la collectivité
+      </li>
+      <li>
+        <strong>Documentation de migration</strong> - Rédaction de
+        documentation technique dans le cadre d'un projet de migration
+        du parc informatique
+      </li>
     </ul>
+ 
+    <div class="tag-container" style="margin-top:16px;">
+      <span class="badge">Helpdesk</span>
+      <span class="badge">Déploiement PC</span>
+      <span class="badge">Documentation</span>
+      <span class="badge">Migration</span>
+    </div>
+ 
+    <div style="margin-top:20px; display:flex; gap:12px; flex-wrap:wrap;">
+      <a href="[LIEN_ATTESTATION]" target="_blank" class="btn-download">
+        Attestation de stage
+      </a>
+      <a href="[LIEN_RAPPORT]" target="_blank" class="btn-download">
+        Rapport de stage
+      </a>
+    </div>
+  </div>
+ 
+  <div class="project-card">
+    <h3>Formation</h3>
+    <ul>
+      <li>
+        <strong>BTS SIO option SISR</strong> -
+        Lycée Gaston Berger, Lille - 2024 / 2026
+      </li>
+      <li>
+        <strong>Baccalauréat</strong> -
+        Lycée Gustave Eiffel, Armentières - 2022 / 2025
+      </li>
+    </ul>
+  </div>
+ 
 </section>
-
+ 
 <script src="script.js" defer></script>
 </body>
 </html>
