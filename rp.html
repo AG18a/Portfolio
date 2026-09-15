@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio BTS SIO SISR - Compétences</title>
-  
+  <title>Compétences | Portfolio Antoine Gelles</title>
   <link rel="stylesheet" href="style.css">
-
-  <script src="script.js" defer></script>
-   <nav id="navbar">
+</head>
+<body>
+ 
+<nav id="navbar">
   <ul>
     <li><a href="index.html">Accueil</a></li>
     <li><a href="about.html">À propos</a></li>
-    <li><a href="e5.html">E5</a></li>
+    <li><a href="e5.html">Épreuve E5</a></li>
     <li><a href="rp.html">Compétences</a></li>
     <li><a href="experience.html">Parcours</a></li>
     <li><a href="projects.html">Projets</a></li>
@@ -20,99 +20,103 @@
     <li><a href="contact.html">Contact</a></li>
   </ul>
 </nav>
-</head>
-<body>
-
-  <header>
-    <h1>Portfolio BTS SIO - Option SISR</h1>
-    <p>Solutions d'Infrastructure, Systèmes et Réseaux</p>
-  </header>
-
-  <main>
-    <section>
-      <h2>Compétences Réseau & Infrastructure</h2>
-      <div class="grid-skills">
-        
-        <div class="card">
-          <h3>Administration Système (Linux & Windows)</h3>
-          <p>Mise en place et gestion des services réseaux sous Windows Server et Linux (Debian/Ubuntu).</p>
-          <ul>
-            <li>Active Directory, GPO, DNS, DHCP</li>
-            <li>Gestion des utilisateurs et des droits d'accès</li>
-            <li>Configuration de services web (Apache, Nginx)</li>
-          </ul>
-          <div class="tag-container">
-            <span class="tag">Windows Server</span>
-            <span class="tag">Debian</span>
-            <span class="tag">Active Directory</span>
-          </div>
-        </div>
-
-        <div class="card">
-          <h3>Réseaux & Commutation</h3>
-          <p>Conception, adressage et sécurisation des réseaux d'entreprise localisés.</p>
-          <ul>
-            <li>Plan d'adressage IPv4 / IPv6 et découpage en sous-réseaux (VLAN)</li>
-            <li>Configuration de routeurs et switchs (Cisco CLI)</li>
-            <li>Routage statique et dynamique (RIP, OSPF)</li>
-          </ul>
-          <div class="tag-container">
-            <span class="tag">Cisco Packet Tracer</span>
-            <span class="tag">VLAN</span>
-            <span class="tag">OSPF</span>
-          </div>
-        </div>
-
-        <div class="card">
-          <h3>Virtualisation & Cloud</h3>
-          <p>Déploiement et gestion d'environnements virtuels pour le maquettage d'infrastructures.</p>
-          <ul>
-            <li>Création et gestion de machines virtuelles (VMware ESXi, Proxmox, VirtualBox)</li>
-            <li>Mise en place de conteneurs légers</li>
-          </ul>
-          <div class="tag-container">
-            <span class="tag">Proxmox</span>
-            <span class="tag">VMware</span>
-            <span class="tag">Docker</span>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <section style="margin-top: 3rem;">
-      <h2>Sécurité & Supervision</h2>
-      <div class="grid-skills">
-        
-        <div class="card">
-          <h3>Sécurité Informatique</h3>
-          <p>Mise en œuvre des bonnes pratiques de sécurisation des réseaux et des systèmes.</p>
-          <ul>
-            <li>Configuration de pare-feu (pfSense, iptables)</li>
-            <li>Mise en place de VPN (OpenVPN, IPsec)</li>
-            <li>Gestion des sauvegardes et politiques d'accès</li>
-          </ul>
-          <div class="tag-container">
-            <span class="tag">pfSense</span>
-            <span class="tag">VPN</span>
-            <span class="tag">Pare-feu</span>
-          </div>
-        </div>
-
-        <div class="card">
-          <h3>Supervision & Monitoring</h3>
-          <p>Suivi de la disponibilité et des performances des équipements réseau.</p>
-          <ul>
-            <li>Installation et configuration de serveurs de supervision</li>
-            <li>Gestion des alertes et analyse des logs</li>
-          </ul>
-          <div class="tag-container">
-          </div>
-        </div>
-
-      </div>
-    </section>
-  </main>
-
+ 
+<section class="section">
+  <h2>Compétences techniques</h2>
+ 
+  <!-- BLOC 1 : Système -->
+  <div class="project-card">
+    <h3>🖥️ Administration Système</h3>
+    <p>
+      Mise en place et gestion des services réseaux sous
+      <strong>Windows Server</strong> et <strong>Linux (Debian / Ubuntu)</strong>.
+    </p>
+    <ul>
+      <li>Active Directory, GPO, DNS, DHCP</li>
+      <li>Gestion des utilisateurs et des droits d'accès</li>
+      <li>Configuration de services web (Apache, Nginx)</li>
+    </ul>
+    <div class="tag-container">
+      <span class="badge">Windows Server</span>
+      <span class="badge">Debian</span>
+      <span class="badge">Active Directory</span>
+    </div>
+  </div>
+ 
+  <!-- BLOC 2 : Réseau -->
+  <div class="project-card">
+    <h3>🌐 Réseaux & Commutation</h3>
+    <p>
+      Conception, adressage et sécurisation des réseaux d'entreprise.
+    </p>
+    <ul>
+      <li>Plan d'adressage IPv4 / IPv6 et découpage en sous-réseaux (VLAN)</li>
+      <li>Configuration de routeurs et switchs (Cisco CLI)</li>
+      <li>Routage statique et dynamique (RIP, OSPF)</li>
+    </ul>
+    <div class="tag-container">
+      <span class="badge">Cisco Packet Tracer</span>
+      <span class="badge">VLAN</span>
+      <span class="badge">OSPF</span>
+    </div>
+  </div>
+ 
+  <!-- BLOC 3 : Virtualisation -->
+  <div class="project-card">
+    <h3>⚙️ Virtualisation & Cloud</h3>
+    <p>
+      Déploiement et gestion d'environnements virtuels pour le maquettage
+      d'infrastructures.
+    </p>
+    <ul>
+      <li>Création et gestion de machines virtuelles (VMware, Proxmox, VirtualBox)</li>
+      <li>Mise en place de conteneurs légers (Docker)</li>
+    </ul>
+    <div class="tag-container">
+      <span class="badge">Proxmox</span>
+      <span class="badge">VMware</span>
+      <span class="badge">Docker</span>
+    </div>
+  </div>
+ 
+  <!-- BLOC 4 : Sécurité -->
+  <div class="project-card">
+    <h3>🔒 Sécurité Informatique</h3>
+    <p>
+      Mise en œuvre des bonnes pratiques de sécurisation des réseaux et systèmes.
+    </p>
+    <ul>
+      <li>Configuration de pare-feu (pfSense, iptables)</li>
+      <li>Mise en place de VPN (OpenVPN, IPsec)</li>
+      <li>Gestion des sauvegardes et politiques d'accès</li>
+    </ul>
+    <div class="tag-container">
+      <span class="badge">pfSense</span>
+      <span class="badge">VPN</span>
+      <span class="badge">Pare-feu</span>
+    </div>
+  </div>
+ 
+  <!-- BLOC 5 : Supervision -->
+  <div class="project-card">
+    <h3>📊 Supervision & Monitoring</h3>
+    <p>
+      Suivi de la disponibilité et des performances des équipements réseau.
+    </p>
+    <ul>
+      <li>Installation et configuration de serveurs de supervision</li>
+      <li>Gestion des alertes et analyse des logs</li>
+    </ul>
+    <div class="tag-container">
+      <span class="badge">Zabbix</span>
+      <span class="badge">PRTG</span>
+      <span class="badge">Logs</span>
+    </div>
+  </div>
+ 
+</section>
+ 
+<script src="script.js" defer></script>
 </body>
 </html>
+ 
