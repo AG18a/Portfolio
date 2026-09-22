@@ -3,11 +3,70 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Compétences | Portfolio Antoine Gelles</title>
+  <title>Compétences & RP | Portfolio Antoine Gelles</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .rp-card {
+      cursor: pointer;
+      transition: transform 0.2s, border 0.2s;
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+    .rp-card:hover {
+      transform: translateY(-4px);
+      border: 1px solid var(--accent, #00bcd4);
+    }
+    .rp-card h3::after {
+      content: " →";
+      color: var(--accent, #00bcd4);
+      opacity: 0.7;
+    }
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.75);
+      z-index: 1000;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    .modal-overlay.open { display: flex; }
+    .modal {
+      background: var(--card-bg, #1e1e2e);
+      border-radius: 14px;
+      padding: 32px;
+      max-width: 600px;
+      width: 100%;
+      border: 1px solid var(--accent, #00bcd4);
+      position: relative;
+      max-height: 90vh;
+      overflow-y: auto;
+    }
+    .modal-close {
+      position: absolute;
+      top: 16px;
+      right: 20px;
+      font-size: 1.4rem;
+      cursor: pointer;
+      opacity: 0.6;
+      background: none;
+      border: none;
+      color: inherit;
+    }
+    .modal-close:hover { opacity: 1; }
+    .modal h3 { margin-top: 0; }
+    .competences-liees {
+      margin-top: 16px;
+      padding: 12px;
+      background: rgba(0,188,212,0.07);
+      border-radius: 8px;
+      border-left: 3px solid var(--accent, #00bcd4);
+      font-size: 0.85rem;
+    }
+  </style>
 </head>
 <body>
- 
+
 <nav id="navbar">
   <ul>
     <li><a href="index.html">Accueil</a></li>
@@ -20,17 +79,14 @@
     <li><a href="contact.html">Contact</a></li>
   </ul>
 </nav>
- 
+
 <section class="section">
   <h2>Compétences techniques</h2>
- 
-  <!-- BLOC 1 : Système -->
+
   <div class="project-card">
     <h3>Administration Système</h3>
-    <p>
-      Mise en place et gestion des services réseaux sous
-      <strong>Windows Server</strong> et <strong>Linux (Debian / Ubuntu)</strong>.
-    </p>
+    <p>Mise en place et gestion des services réseaux sous
+    <strong>Windows Server</strong> et <strong>Linux (Debian / Ubuntu)</strong>.</p>
     <ul>
       <li>Active Directory, GPO, DNS, DHCP</li>
       <li>Gestion des utilisateurs et des droits d'accès</li>
@@ -42,13 +98,10 @@
       <span class="badge">Active Directory</span>
     </div>
   </div>
- 
-  <!-- BLOC 2 : Réseau -->
+
   <div class="project-card">
     <h3>Réseaux & Commutation</h3>
-    <p>
-      Conception, adressage et sécurisation des réseaux d'entreprise.
-    </p>
+    <p>Conception, adressage et sécurisation des réseaux d'entreprise.</p>
     <ul>
       <li>Plan d'adressage IPv4 / IPv6 et découpage en sous-réseaux (VLAN)</li>
       <li>Configuration de routeurs et switchs (Cisco CLI)</li>
@@ -60,14 +113,10 @@
       <span class="badge">OSPF</span>
     </div>
   </div>
- 
-  <!-- BLOC 3 : Virtualisation -->
+
   <div class="project-card">
     <h3>Virtualisation & Cloud</h3>
-    <p>
-      Déploiement et gestion d'environnements virtuels pour le maquettage
-      d'infrastructures.
-    </p>
+    <p>Déploiement et gestion d'environnements virtuels pour le maquettage d'infrastructures.</p>
     <ul>
       <li>Création et gestion de machines virtuelles (VMware, Proxmox, VirtualBox)</li>
       <li>Mise en place de conteneurs légers (Docker)</li>
@@ -76,13 +125,10 @@
       <span class="badge">VMware</span>
     </div>
   </div>
- 
-  <!-- BLOC 4 : Sécurité -->
+
   <div class="project-card">
     <h3>Sécurité Informatique</h3>
-    <p>
-      Mise en œuvre des bonnes pratiques de sécurisation des réseaux et systèmes.
-    </p>
+    <p>Mise en œuvre des bonnes pratiques de sécurisation des réseaux et systèmes.</p>
     <ul>
       <li>Configuration de pare-feu (pfSense, iptables)</li>
       <li>Mise en place de VPN (OpenVPN, IPsec)</li>
@@ -94,13 +140,10 @@
       <span class="badge">Pare-feu</span>
     </div>
   </div>
- 
-  <!-- BLOC 5 : Supervision -->
+
   <div class="project-card">
     <h3>Supervision & Monitoring</h3>
-    <p>
-      Suivi de la disponibilité et des performances des équipements réseau.
-    </p>
+    <p>Suivi de la disponibilité et des performances des équipements réseau.</p>
     <ul>
       <li>Installation et configuration de serveurs de supervision</li>
       <li>Gestion des alertes et analyse des logs</li>
@@ -110,10 +153,56 @@
       <span class="badge">Logs</span>
     </div>
   </div>
- 
+
+  
+  <h2 style="margin-top:48px; margin-bottom:8px;">
+    📁 Réalisations Professionnelles (RP)
+  </h2>
+  <p style="opacity:0.7; font-size:0.88rem; margin-bottom:24px;">
+    Clique sur une réalisation pour voir le détail, les compétences validées
+    et accéder aux documents associés.
+  </p>
+
+  <div class="project-card rp-card" onclick="ouvrirModal('modal-stage')">
+    <h3>Stage — Mairie de Nieppe</h3>
+    <p>Helpdesk, préparation de postes et documentation de migration.</p>
+    <div class="tag-container" style="margin-top:10px;">
+      <span class="badge">Helpdesk</span>
+      <span class="badge">Déploiement PC</span>
+      <span class="badge">Documentation</span>
+    </div>
+  </div>
+
+  <div class="project-card rp-card" onclick="ouvrirModal('modal-vlan')">
+    <h3>TP — Configuration VLAN & Routage inter-VLAN</h3>
+    <p>Segmentation réseau et routage inter-VLAN sur Cisco Packet Tracer.</p>
+    <div class="tag-container" style="margin-top:10px;">
+      <span class="badge">VLAN</span>
+      <span class="badge">Cisco</span>
+      <span class="badge">Routage</span>
+    </div>
+  </div>
+
+  <div class="project-card rp-card" onclick="ouvrirModal('modal-ap1')">
+    <h3>AP 1 — <span style="opacity:0.5;">[Titre à compléter]</span></h3>
+    <p style="opacity:0.6;">À compléter avec ton compte-rendu d'AP.</p>
+  </div>
+
+  <div class="project-card rp-card" onclick="ouvrirModal('modal-ap2')">
+    <h3>AP 2 — <span style="opacity:0.5;">[Titre à compléter]</span></h3>
+    <p style="opacity:0.6;">À compléter avec ton compte-rendu d'AP.</p>
+  </div>
+
+  <div class="project-card rp-card" onclick="ouvrirModal('modal-ap3')">
+    <h3>AP 3 — <span style="opacity:0.5;">[Titre à compléter]</span></h3>
+    <p style="opacity:0.6;">À compléter avec ton compte-rendu d'AP.</p>
+  </div>
+
 </section>
- 
-<script src="script.js" defer></script>
-</body>
-</html>
- 
+
+<!-- ===== MODALS ===== -->
+
+<div class="modal-overlay" id="modal-stage">
+  <div class="modal">
+    <button class="modal-close" onclick="fermerModal('modal-stage')">✕</button>
+    <h3>🏢 Stage
