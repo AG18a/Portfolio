@@ -1,74 +1,247 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Parcours | Portfolio Antoine Gelles</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Parcours | Portfolio Antoine Gelles</title>
+<link rel="stylesheet" href="style.css">
+<style>
+    .timeline {
+      border-left: 3px solid var(--accent, #00bcd4);
+      padding-left: 24px;
+      margin-bottom: 40px;
+    }
+    .timeline-item {
+      position: relative;
+      margin-bottom: 32px;
+    }
+    .timeline-dot {
+      position: absolute;
+      left: -33px;
+      top: 4px;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: var(--accent, #00bcd4);
+      border: 2px solid var(--bg, #0f0f1a);
+    }
+    .timeline-date { opacity:0.6; font-size:0.82rem; margin:0 0 4px 0; }
+    .timeline-title { margin:0 0 8px 0; }
+    .timeline-desc { font-size:0.88rem; opacity:0.8; }
+    .synthese-table {
+      width:100%;
+      border-collapse:collapse;
+      font-size:0.82rem;
+      display:block;
+      overflow-x:auto;
+    }
+    .synthese-table th {
+      background:var(--accent,#00bcd4);
+      color:#000;
+      padding:10px 8px;
+      text-align:center;
+      white-space:nowrap;
+    }
+    .synthese-table td {
+      padding:10px 8px;
+      text-align:center;
+      border:1px solid rgba(255,255,255,0.1);
+      vertical-align:middle;
+    }
+    .synthese-table tr:nth-child(even) { background:rgba(255,255,255,0.03); }
+    .synthese-table td:first-child {
+      text-align:left;
+      font-weight:bold;
+      padding-left:12px;
+    }
+    .check { color:#4caf50; }
+    .dash  { color:rgba(255,255,255,0.2); }
+</style>
 </head>
 <body>
- 
 <nav id="navbar">
-  <ul>
-    <li><a href="index.html">Accueil</a></li>
-    <li><a href="about.html">À propos</a></li>
-    <li><a href="e5.html">Épreuve E5</a></li>
-    <li><a href="rp.html">Compétences</a></li>
-    <li><a href="experience.html">Parcours</a></li>
-    <li><a href="projects.html">Projets</a></li>
-    <li><a href="veille.html">Veilles</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
+<ul>
+<li><a href="index.html">Accueil</a></li>
+<li><a href="about.html">À propos</a></li>
+<li><a href="e5.html">E5</a></li>
+<li><a href="rp.html">Compétences</a></li>
+<li><a href="experience.html">Parcours</a></li>
+<li><a href="projects.html">Projets</a></li>
+<li><a href="veille.html">Veilles</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
 </nav>
- 
 <section class="section">
-  <h2>Mon Parcours</h2>
- 
-  <div class="project-card">
-    <h3>Stage - Mairie de Nieppe</h3>
-    <p><strong>Durée :</strong> 6 semaines</p>
-    <p><strong>Lieu :</strong> Nieppe (59)</p>
-    <p><strong>Rôle :</strong> Technicien informatique</p>
- 
-    <h4 style="margin-top:16px;">Missions réalisées</h4>
-    <ul>
-      <li>
-        <strong>Support helpdesk</strong> - Assistance aux utilisateurs,
-        résolution d'incidents informatiques du quotidien
-      </li>
-      <li>
-        <strong>Préparation de postes</strong> - Installation, configuration
-        et déploiement de PC pour les agents de la collectivité
-      </li>
-      <li>
-        <strong>Documentation de migration</strong> - Rédaction de
-        documentation technique dans le cadre d'un projet de migration
-        du parc informatique
-      </li>
-    </ul> 
-    <div style="margin-top:20px; display:flex; gap:12px; flex-wrap:wrap;">
-      <a href="https://gastonberger-my.sharepoint.com/:b:/g/personal/antoine_gelles_gastonberger_fr/IQAW986Hu92TRZ5NyrBQMRyyAal2pXl4LJWEdtnXYO9-Unw?e=IInzbG" target="_blank" class="btn-download">
-        Attestation de stage
-      </a>
-    </div>
-  </div>
- 
-  <div class="project-card">
-    <h3>Formation</h3>
-    <ul>
-      <li>
-        <strong>BTS SIO option SISR</strong> -
-        Lycée Gaston Berger, Lille - 2024 / 2026
-      </li>
-      <li>
-        <strong>Baccalauréat</strong> -
-        Lycée Gustave Eiffel, Armentières - 2022 / 2025
-      </li>
-    </ul>
-  </div>
- 
+<h2>Parcours de Professionnalisation</h2>
+<div class="timeline">
+<div class="timeline-item">
+<div class="timeline-dot"></div>
+<p class="timeline-date">2024 - Aujourd'hui</p>
+<h3 class="timeline-title">BTS SIO option SISR</h3>
+<p>Lycée Gaston Berger - Lille</p>
+<p class="timeline-desc">
+        Formation en 2 ans axée sur les infrastructures systèmes et réseaux :
+        administration système, réseaux, virtualisation, sécurité et supervision.
+</p>
+</div>
+<div class="timeline-item">
+<div class="timeline-dot"></div>
+<p class="timeline-date">2025 - 6 semaines</p>
+<h3 class="timeline-title">Stage - Mairie de Nieppe</h3>
+<p class="timeline-desc">
+        Technicien informatique au sein du service informatique de la collectivité.
+        Missions : helpdesk, préparation de postes, documentation de migration.
+</p>
+<div style="margin-top:10px;">
+<a href="https://gastonberger-my.sharepoint.com/:b:/g/personal/antoine_gelles_gastonberger_fr/IQAW986Hu92TRZ5NyrBQMRyyAal2pXl4LJWEdtnXYO9-Unw?e=IInzbG" target="_blank" class="btn-download">
+          Attestation de stage
+</a>
+</div>
+</div>
+</div>
+<h2 style="margin-bottom:20px;">Activités Professionnelles (AP)</h2>
+<p style="opacity:0.7; font-size:0.88rem; margin-bottom:24px;">
+    Activités réalisées au lycée Gaston Berger dans le cadre de la formation BTS SIO SISR.
+</p>
+<div class="project-card">
+<h3>AP Mission 1<span style="opacity:0.5;">[Titre à compléter]</span></h3>
+<p style="opacity:0.6; font-size:0.82rem;">[Date] — Lycée Gaston Berger</p>
+<div style="margin-top:12px;">
+<a href="[LIEN_AP1]" target="_blank" class="btn-download">Voir le compte-rendu</a>
+</div>
+</div>
+<div class="project-card">
+<h3>AP Mission 2<span style="opacity:0.5;">[Titre à compléter]</span></h3>
+<p style="opacity:0.6; font-size:0.82rem;">[Date] — Lycée Gaston Berger</p>
+<div style="margin-top:12px;">
+<a href="[LIEN_AP2]" target="_blank" class="btn-download">Voir le compte-rendu</a>
+</div>
+</div>
+<div class="project-card">
+<h3>AP Mission 3<span style="opacity:0.5;">[Titre à compléter]</span></h3>
+<p style="opacity:0.6; font-size:0.82rem;">[Date] — Lycée Gaston Berger</p>
+<div style="margin-top:12px;">
+<a href="[LIEN_AP3]" target="_blank" class="btn-download">Voir le compte-rendu</a>
+</div>
+</div>
+  <!-- TABLEAU DE SYNTHÈSE -->
+<h2 style="margin-top:48px; margin-bottom:8px;">Tableau de Synthèse - Épreuve E5</h2>
+<p style="opacity:0.7; font-size:0.88rem; margin-bottom:20px;">
+    BTS SIO - Session 2026 | Antoine Gelles | Lycée Gaston Berger | Option SISR
+</p>
+<div class="project-card" style="overflow-x:auto; padding:16px;">
+<table class="synthese-table">
+<thead>
+<tr>
+<th rowspan="2" style="min-width:200px; text-align:left; padding-left:10px;">
+            Réalisations Professionnelles
+</th>
+<th rowspan="2" style="min-width:90px;">Période</th>
+<th colspan="6" style="background:#005f73;">Bloc 1 - Commun</th>
+<th colspan="6" style="background:#0a9396;">Bloc 2 - SISR</th>
+</tr>
+<tr>
+<th title="Gérer le patrimoine informatique">B1.1</th>
+<th title="Répondre aux incidents">B1.2</th>
+<th title="Développer la présence en ligne">B1.3</th>
+<th title="Travailler en mode projet">B1.4</th>
+<th title="Mettre à disposition un service">B1.5</th>
+<th title="Organiser son développement professionnel">B1.6</th>
+<th title="Concevoir une solution réseau">B2.1</th>
+<th title="Installer et configurer l'infrastructure">B2.2</th>
+<th title="Faire évoluer une infrastructure">B2.3</th>
+<th title="Exploiter une infrastructure centralisée">B2.4</th>
+<th title="Exploiter des services virtualisés">B2.5</th>
+<th title="Automatiser l'administration">B2.6</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="14" style="background:rgba(0,188,212,0.1);font-weight:bold;text-align:left;padding:8px 12px;">
+            Réalisations en cours de formation
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left:12px;white-space:normal;">
+            TP VLAN & Routage inter-VLAN<br>
+<span style="font-size:0.75rem;opacity:0.6;">Cisco Packet Tracer - Compte-rendu TP</span>
+</td>
+<td style="font-size:0.78rem;">2024/2025</td>
+<td class="dash">—</td><td class="dash">—</td><td class="dash">—</td>
+<td class="dash">—</td><td class="dash">—</td><td class="dash">—</td>
+<td class="check">✅</td><td class="check">✅</td><td class="dash">—</td>
+<td class="dash">—</td><td class="dash">—</td><td class="dash">—</td>
+</tr>
+<tr>
+<td colspan="14" style="background:rgba(0,188,212,0.1);font-weight:bold;text-align:left;padding:8px 12px;">
+            Activités Professionnelles (AP)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left:12px;white-space:normal;">
+            AP Mission 1<span style="opacity:0.5;">[À compléter]</span>
+</td>
+<td style="font-size:0.78rem;">[Date]</td>
+<td class="dash">—</td><td class="dash">—</td><td class="dash">—</td>
+<td class="dash">—</td><td class="dash">—</td><td class="dash">—</td>
+<td class="dash">—</td><td class="dash">—</td><td class="dash">—</td>
+<td class="dash">—</td><td class="dash">—</td><td class="dash">—</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left:12px;white-space:normal;">
+            AP Mission 2<span style="opacity:0.5;">[À compléter]</span>
+</td>
+<td style="font-size:0.78rem;">[Date]</td>
+<td class="dash">—</td><td class="dash">—</td><td class="dash">—</td>
+<td class="dash">—</td><td class="dash">—</td><td class="dash">—</td>
+<td class="dash">—</td><td class="dash">—</td><td class="dash">—</td>
+<td class="dash">—</td><td class="dash">—</td><td class="dash">—</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left:12px;white-space:normal;">
+            AP Mission 3<span style="opacity:0.5;">[À compléter]</span>
+</td>
+<td style="font-size:0.78rem;">[Date]</td>
+<td class="dash">—</td><td class="dash">—</td><td class="dash">—</td>
+<td class="dash">—</td><td class="dash">—</td><td class="dash">—</td>
+<td class="dash">—</td><td class="dash">—</td><td class="dash">—</td>
+<td class="dash">—</td><td class="dash">—</td><td class="dash">—</td>
+</tr>
+<tr>
+<td colspan="14" style="background:rgba(0,188,212,0.1);font-weight:bold;text-align:left;padding:8px 12px;">
+            Réalisations en milieu professionnel - 1ère année
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left:12px;white-space:normal;">
+            Stage - Mairie de Nieppe<br>
+<span style="font-size:0.75rem;opacity:0.6;">Attestation de stage - Rapport de stage</span>
+</td>
+<td style="font-size:0.78rem;">2025<br>6 semaines</td>
+<td class="check">✅</td><td class="check">✅</td><td class="dash">—</td>
+<td class="dash">—</td><td class="check">✅</td><td class="dash">—</td>
+<td class="dash">—</td><td class="check">✅</td><td class="dash">—</td>
+<td class="check">✅</td><td class="dash">—</td><td class="dash">—</td>
+</tr>
+<tr>
+<td colspan="14" style="background:rgba(0,188,212,0.1);font-weight:bold;text-align:left;padding:8px 12px;">
+            Réalisations en milieu professionnel - 2ème année
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left:12px;opacity:0.4;font-style:italic;">
+            À compléter en 2ème année
+</td>
+<td></td>
+<td class="dash">—</td><td class="dash">—</td><td class="dash">—</td>
+<td class="dash">—</td><td class="dash">—</td><td class="dash">—</td>
+<td class="dash">—</td><td class="dash">—</td><td class="dash">—</td>
+<td class="dash">—</td><td class="dash">—</td><td class="dash">—</td>
+</tr>
+</tbody>
+</table>
+</div>
 </section>
- 
 <script src="script.js" defer></script>
 </body>
 </html>
